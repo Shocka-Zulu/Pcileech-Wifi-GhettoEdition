@@ -135,7 +135,7 @@ module pcileech_tlps128_bar_controller(
                         bar_rsp_valid[6] ? bar_rsp_data[6] : 0;
     assign rd_rsp_valid = bar_rsp_valid[0] || bar_rsp_valid[1] || bar_rsp_valid[2] || bar_rsp_valid[3] || bar_rsp_valid[4] || bar_rsp_valid[5] || bar_rsp_valid[6];
     
-    pcileech_bar_impl_ar9287_wifi i_bar0(
+    pcileech_bar_FsINCHAT i_bar0(
         .rst                   ( rst                           ),
         .clk                   ( clk                           ),
         .wr_addr               ( wr_addr                       ),
